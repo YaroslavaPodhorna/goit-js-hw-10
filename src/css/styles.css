@@ -16,3 +16,181 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+/******** timer *******/
+
+.back-link {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-bottom: 16px;
+}
+
+
+
+#datetime-picker {
+  width: 355px;
+
+  padding: 8px 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+button[data-start] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4E75FF;
+  border: none;
+  font-size: 16px;
+
+  cursor: pointer;
+  text-align: center;
+  font-family: var(--font-family);
+font-weight: 500;
+
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+
+button[data-start]:disabled {
+  background-color: #CFCFCF;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+
+.timer {
+  display: flex;
+  width: 346px;
+  height: 72px;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.field {
+
+
+ 
+  width: 61px;
+  height: 72px;
+  text-align: center;
+  gap: 24px;
+}
+
+.value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  width: 55px;
+height: 72px;
+}
+
+.label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* *********** */
+
+/********* snackbar ********/
+.form {
+  max-width: 360px;
+
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #2e2f42;
+  }
+.form input {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  
+  }
+  .form fieldset {
+    border: 1px solid #808080;
+    border-radius: 4px;
+   
+    margin-bottom: 16px;
+  }
+  .form fieldset label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 48px;
+
+
+    border-radius: 4px;
+stroke-width: 1px;
+stroke: #000;
+fill: #4E75FF;
+text-align: center;
+  }
+  .form fieldset legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2e2f42;
+    padding: 0 8px;
+  }
+  
+  .form input[type="radio"] {
+    margin-right: 8px;
+
+  }
+  
+  .form label[for="fulfilled"],
+  .form label[for="rejected"] {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2e2f42;
+  }
+  
+  .form button {
+    border-radius: 8px;
+padding: 8px 16px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #4E75FF;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+  
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #6C8CFF;
+  }
